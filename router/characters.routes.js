@@ -117,8 +117,8 @@ router.put('/update/:id', async (req, res) => {
     const options = { upsert: true };
     const updateDoc = {
       $set: {
-        username:!!username && username,
-        role:!!role && role,
+        username,
+        role,
       },
     };
 
